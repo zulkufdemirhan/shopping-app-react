@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "title":"Coca Cola",
+        "price": 5, 
+        "photo":"https://www.freepnglogos.com/uploads/coca-cola-png/coca-cola-livv-pizza-pasta-11.png",
+        "name" :"drink"
+    },
+    {
+        "id": 2,
+        "title":"Pepsi",
+        "price": 5,
+        "photo":"https://www.freepnglogos.com/uploads/pepsi-png/pepsi-png-transparent-image-pngpix-0.png",
+        "name" :"drink"
+    },
+    {
+        "id": 3,
+        "title":"Sprite",
+        "price": 5 ,
+        "photo":"https://www.freepnglogos.com/uploads/sprite-png-logo/box-sprite-bottle-png-images-logo-5.png",
+        "type" :"drink"
+    },
+    {
+        "id": 4,
+        "title":"Water",
+        "price": 3 ,
+        "photo":"https://www.freepnglogos.com/uploads/water-bottle-png/water-bottle-transparent-png-pictures-icons-and-png-1.png",
+        "type" :"drink"
+    },   
+    {
+        "id": 5,
+        "title":"Ice cream",
+        "price": 10, 
+        "photo":"https://www.freepnglogos.com/uploads/ice-cream-png/transparent-ice-cream-cone-png-picture-gallery-4.png",
+        "type" :"food"
+    },
+    {
+        "id": 6,
+        "title":"Hamburger", 
+        "price": 25,
+        "photo":"https://www.freepnglogos.com/uploads/burger-png/burger-png-food-fosters-grille-18.png",
+        "type" :"food"
+    },
+    {
+        "id": 7,
+        "title":"Pineapple",
+        "price": 7 ,
+        "photo":"https://www.freepnglogos.com/uploads/fruits-png/fruits-juice-your-daily-diet-with-juice-works-everyday-food-8.png",
+        "type" :"fruit"
+    },
+    {
+        "id": 8,
+        "title":"Tomato",
+        "price": 5 ,
+        "photo":"https://www.freepnglogos.com/uploads/tomato-png/tomato-png-images-transparent-photos-png-only-7.png",
+        "type" :"vegetable"
+    },
+    {
+        "id": 9,
+        "title":"Potato",
+        "price": 6, 
+        "photo":"https://www.freepnglogos.com/uploads/potato-png/potato-png-image-pngpix-11.png",
+        "type" :"vegetable"
+    },
+    {
+        "id": 10,
+        "title":"Doner",
+        "price": 25,
+        "photo":"https://www.freepnglogos.com/uploads/kebab-png/doner-kebab-mix-5.png",
+        "type" :"food"
+    },
+    {
+        "id": 11,
+        "title":"Kebab",
+        "price": 40 ,
+        "photo":"https://www.freepnglogos.com/uploads/kebab-png/image-kebab-battle-for-dream-island-wiki-fandom-19.png",
+        "type" :"food"
+    },
+    {
+        "id": 12,
+        "title":"Banana",
+        "price": 6 ,
+        "photo":"https://www.freepnglogos.com/uploads/banana-png/banana-school-council-drapers-mills-primary-academy-little-0.png",
+        "type" :"fruit"
+    },
+    {
+        "id": 13,
+        "title":"Orange",
+        "price": 6, 
+        "photo":"https://www.freepnglogos.com/uploads/fruits-png/fruits-orange-fruit-png-image-pngpix-15.png",
+        "type" :"fruit"
+    },
+    {
+        "id": 14,
+        "title":"Chocolate",
+        "price": 10,
+        "photo":"https://www.freepnglogos.com/uploads/chocolate-png/dark-chocolate-orange-protein-bar-ote-sports-goodness-37.png",
+        "type" :"food"
+    },
+    {
+        "id": 15,
+        "title":"Sugar",
+        "price": 10 ,
+        "photo":"https://www.freepnglogos.com/uploads/sugar-png/download-sugar-png-transparent-image-and-clipart-8.png",
+        "type" :"food"
+    },
+    {
+        "id": 16,
+        "title":"Salt",
+        "price": 2 ,
+        "photo":"https://www.freepnglogos.com/uploads/sugar-png/sugar-junk-food-png-transparent-quality-images-png-only-19.png",
+        "type" :"food"
+    }
+]

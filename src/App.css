@@ -1,0 +1,434 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(-45deg,#a5a591, #c4b6b6, #659DBD, #b5d1bb);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vh;
+  height: 50vh;
+  background: rgba(255,255,255, 0.4);
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 5px;
+  width: 90vh;
+  height: 90vh;
+  position: relative;
+  overflow-y:auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+.container::-webkit-scrollbar{
+  background:transparent;
+  border-radius: 10px;
+  width: 5px;
+  height: 5px;
+}
+
+.container::-webkit-scrollbar-corner{
+  background: transparent;
+}
+
+.container::-webkit-scrollbar-thumb{
+  background: #676769;
+  border-radius: 15px;
+  width: 100px;
+}
+/* !!------------------------------------Header--------------------------------------- */
+
+.header {
+  height: 50px;
+  border-bottom: 1px solid ;
+  border-color: rgb(82 75 75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.color{
+  height: 50px;
+  width: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5px;
+}
+.green {
+  width: 12px;
+  height: 12px;
+  background: #5fcf65;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.yellow {
+  width: 12px;
+  height: 12px;
+  background: #f8ce52;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.red{
+  width: 12px;
+  height: 12px;
+  background: #f96057;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.profil {
+  height: 50px;
+  width: 12vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 10px;
+}
+
+i{
+  color: whitesmoke;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+}
+
+i:hover{
+  color:goldenrod;
+}
+
+.middle {
+  width: 60vh;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.headerInput{
+    background-color: inherit ;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 3px 20px 3px 40px;
+    box-shadow: 0 0 0 2px rgb(134 140 160 / 2%);
+    background-image:url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png");
+    background-size: 19px;
+    background-repeat: no-repeat;
+    background-position: 18px 48%;
+    border-radius:15px;
+    font-family: 'Poiret One', cursive;
+    color:white;
+    transition: all 0.3s ease-in;
+}
+
+h2 {
+  letter-spacing: 1px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+h2:hover{
+  border-bottom: 2px solid goldenrod;
+}
+
+/* !!-------------------------------Products-------------------------------------------- */
+
+.ulBox{
+  width: 83vh;
+  height: 83vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  overflow-y:auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  background: rgba(255,255,255, 0.3);
+  box-shadow: 0 25px 45px rgb(0 0 0 / 14%);
+  backdrop-filter: blur(4px);
+  border-radius: 5px;
+}
+
+.ulBox::-webkit-scrollbar{
+background:transparent;
+border-radius: 10px;
+width: 5px;
+height: 5px;
+}
+
+.ulBox::-webkit-scrollbar-corner{
+background: transparent;
+}
+
+.ulBox::-webkit-scrollbar-thumb{
+background: #676769;
+border-radius: 15px;
+width: 100px;
+}
+
+.liBox{
+  box-shadow: 0 0 0 2px rgb(134 140 160 / 30%);
+  border-radius: 5px;
+  list-style: none;
+  height: 20vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+.liFooter {
+  width: 100%;
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailsBox {
+  width: 100%;
+  height: 22vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+img {
+  height: 8vh;
+}
+
+.amount {
+  padding: 10px;
+}
+
+.deleteBtn , .addBtn {
+  width: 5vh;
+  height: 3vh;
+  cursor: pointer;
+  background: #8D8741;
+  border-radius: 10px;
+  border: none;
+}
+
+
+/* !!------------------------------personrow--------------------------------------------- */
+
+.ıcerik {
+  background: rgba(255,255,255, 0.3);
+  box-shadow: 0 25px 45px rgb(0 0 0 / 14%);
+  backdrop-filter: blur(4px);
+  border-radius: 5px;
+  margin-top: 12px;
+  width: 83vh;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+}
+
+.baslık{
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+}
+.baslık:hover{
+  color:goldenrod;
+}
+
+.ben{
+  border-radius: 50%;
+  height: 4vh;
+  cursor: pointer;
+}
+svg{
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+svg:hover{
+  color:goldenrod;
+  transform: scale(1.2);
+}
+
+/* !!--------------------------- OrderBox------------------------------------------------*/
+.deneme{
+  display: none;
+}
+
+.orderBox {
+  background: #897f63;
+  box-shadow: 0 25px 45px rgb(0 0 0 / 25%);
+  position: absolute;
+  top: 56px;
+  width: 72vh;
+  height: 32vh;
+  border-radius: 5px;
+  overflow-y:auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.orderBox::-webkit-scrollbar{
+  background:transparent;
+  border-radius: 10px;
+  width: 5px;
+  height: 5px;
+  }
+  
+.orderBox::-webkit-scrollbar-corner{
+  background: transparent;
+  }
+  
+.orderBox::-webkit-scrollbar-thumb{
+  background: #676769;
+  border-radius: 15px;
+  width: 100px;
+  }
+
+.orderAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(255,255,20, 0.4);
+  height: 4vh;
+}
+.productsOrder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.myProduct {
+  display: flex;
+  align-items: center;
+  margin-left: 36px;
+  margin-top: 10px;
+}
+
+.cancel , .order {
+  width: 6vh;
+  height: 3vh;
+  cursor: pointer;
+  background: #8D8741;
+  border-radius: 10px;
+  border: none;
+}
+/* !!--------------------------- Toast Mes..------------------------------------------------*/
+
+
+.tost {
+  position:absolute;
+  transform: translateY(-5vh) ;
+  background: #3f9b2e;
+  width: 25vh;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  transition: all 0.3s ease-in;
+  font-size: 12px;
+}
+
+.tostCancel{
+  position:absolute;
+  transform: translateY(-5vh);
+  background: #a31f1f;
+  width: 25vh;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  transition: all 0.3s ease-in;
+  font-size: 12px;
+}
+
+.message{
+  display: none;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background: #fd0e00;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  left: 14vh;
+  top: 8px;
+  }
+
+  .lastMessage {
+    height: 45vh;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.social {
+  width: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sign, h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  letter-spacing: 5px;
+  animation-name: scroll-down;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+  background: linear-gradient(to right, #659DBD, #bd6123);
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes scroll-down {
+  from { height: 0; }
+  to { height: 150px; }
+}
+
+
