@@ -6,5 +6,4 @@ return (
     <div className='myProduct'>
             <img src={product.photo} />{product.title} x {item.amount}
     </div>
-)
-}
+)}
