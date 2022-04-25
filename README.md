@@ -18,7 +18,7 @@
      -I could create an input or category to filter products.
      -I could be more careful with color harmonies.
      
-*If you have ideas that you think might be helpful to me, please don't hesitate to contact me.Thanks)
+*If you have any ideas that you think might help me improve my skills, please feel free to contact me. Thanks .)
     
       
  Link of the App (video) : 
