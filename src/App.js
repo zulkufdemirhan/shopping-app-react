@@ -1,15 +1,13 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
-import Header from './Header'
-import Products from './Products'
+import Header from './component/Header'
+import Products from './component/Products'
 import product from './product.json'
-import Icerik from './Icerik'
+import Icerik from './component/Icerik'
 import {FaCheck,FaBan,FaLinkedin,FaGithub} from 'react-icons/fa'
 import './App.css'
 
-
 export default function App() {
-  
   const [basket,setBasket]=useState([])
   const [total,setTotal]=useState(0)
 
@@ -42,39 +40,25 @@ export default function App() {
       },0),
     )
   },[basket])
-
-
   const final = ()=>{
-
     const ulBox=document.querySelector(".ulBox")
     const lastMessage=document.querySelector(".lastMessage")
     ulBox.style.display="none"
     lastMessage.style.display="flex"
-
   }
-
-  
-  
   return (
-    
     <div className='container '>
         <div className='tost'>
           <FaCheck size="15px"/>
           <h3>Your order has been received.</h3>
         </div>
-
         <div className='tostCancel'>
           <FaBan size="15px"/>
           <h3>Your order has been cancelled.</h3>
         </div>
-
-        
           <span className='message'>1</span>
-        
         <Header final={final} />
-
         <Icerik basket={basket} total={total} order={sendOrder} cancel={sendCancel} product={product}/>
-        
         <div className='lastMessage'>
             <h1>Thank you for watching ...</h1>
             <h1 className='sign'>Zülküf Demirhan</h1> 
@@ -83,7 +67,6 @@ export default function App() {
                 <FaGithub className='git'  size="60px"  />
               </div>
         </div>
-
         <ul className='ulBox'>
             {product.map(product =>(
               <li className='liBox'>
@@ -91,7 +74,6 @@ export default function App() {
               </li>
             ))}
         </ul>
-
     </div>
   )
 }
